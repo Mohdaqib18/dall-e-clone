@@ -23,16 +23,13 @@ const CreatePost = () => {
 			setLoading(true);
 
 			try {
-				const response = await fetch(
-					"https://dall-e-ai-iss2.onrender.com/api/v1/post",
-					{
-						method: "POST",
-						headers: {
-							"Content-Type": "application/json",
-						},
-						body: JSON.stringify(form),
-					}
-				);
+				const response = await fetch("https://dalle-ai-b97t.onrender.com/api/v1/post", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(form),
+				});
 
 				await response.json();
 				navigate("/");
@@ -60,7 +57,7 @@ const CreatePost = () => {
 			try {
 				setGeneratingImg(true);
 				const response = await fetch(
-					"https://dall-e-ai-iss2.onrender.com/api/v1/dalle",
+					"https://dalle-ai-b97t.onrender.com/api/v1/dalle",
 					{
 						method: "POST",
 						headers: {

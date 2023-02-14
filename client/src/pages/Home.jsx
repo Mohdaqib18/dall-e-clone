@@ -43,7 +43,7 @@ const Home = () => {
 			setLoading(true);
 			try {
 				const response = await fetch(
-					"https://dall-e-ai-iss2.onrender.com/api/v1/post",
+					"https://dalle-ai-b97t.onrender.com/api/v1/post",
 					{
 						method: "GET",
 						headers: {
